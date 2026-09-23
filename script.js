@@ -7,10 +7,9 @@ document.querySelectorAll('nav a, .footer-links a, .btn').forEach(link => {
   });
 });
 
-const search = document.querySelector('#searchInput');
+const search = document.querySelector('.search input');
 search?.addEventListener('keydown', e => {
   if (e.key === 'Enter' && search.value.trim()) {
-    const term = search.value.trim();
-    window.location.hash = `contato?busca=${encodeURIComponent(term)}`;
+    alert(`Busca por: ${search.value.trim()}`);
   }
 });

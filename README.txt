@@ -1,15 +1,20 @@
-DaCaLi Store — site institucional
-Domínio configurado no projeto: https://dacalistore.com.br/
+DaCaLi Store — site institucional corrigido
 
-Arquivos:
+Arquivos principais:
 - index.html
-- style.css
+- estilo.css
 - script.js
 - logo-dacali.png
 - hero-dacali.jpg
 - sobre-dacali.jpg
 
-O visual usa a imagem de referência fornecida para compor o banner e a seção Sobre.
-Para publicar, envie todos os arquivos da pasta para a hospedagem e aponte o domínio dacalistore.com.br para essa hospedagem.
+Correções:
+- hero e seção Sobre usam as imagens reais do projeto;
+- logo real no cabeçalho e rodapé;
+- index.html referencia estilo.css, compatível com o nome usado no GitHub;
+- removida a referência ao domínio dacalistore.com.br, pois o domínio ainda não foi comprado;
+- e-mail corrigido para contato.dacalistore@gmail.com;
+- layout responsivo para celular;
+- links das categorias apontam para Contato enquanto o catálogo ainda não foi publicado.
 
-Observação: o projeto usa Google Fonts e links externos para Instagram/WhatsApp. O número de WhatsApp deve ser substituído pelo número comercial real antes da publicação.
+WhatsApp: o número comercial ainda precisa ser informado para transformar o botão em link direto.
