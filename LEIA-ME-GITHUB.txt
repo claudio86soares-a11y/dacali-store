@@ -1,13 +1,5 @@
-DACALI STORE — SITE
+DaCaLi Store — Site institucional e catálogo
 
-Arquivos principais:
-- index.html — página inicial
-- produtos.html — catálogo completo com imagens e filtros por categoria
-- estilo.css — visual responsivo
-- script.js — menu, busca e filtros
-- video-dacali.mp4 — vídeo institucional
+No catálogo, o carrossel de categorias permite navegar por toque, arrastar ou pelas setas. Ao clicar em uma categoria, abre uma página exclusiva com os produtos e fotos daquele segmento.
 
-O botão flutuante do WhatsApp é um ícone vetorial pequeno e abre diretamente:
-https://wa.me/5511983044529
-
-O botão “Ver catálogo completo” abre produtos.html, onde o visitante pode pesquisar e filtrar os produtos e visualizar as imagens do acervo.
+WhatsApp: 11 98304-4529
