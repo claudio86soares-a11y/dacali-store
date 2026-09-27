@@ -1,18 +1,12 @@
-CORREÇÃO DAS FOTOS - DACALI STORE
+# DaCaLi Store — site profissional
 
-Problema corrigido:
-As páginas estavam procurando as imagens dentro da pasta "imagens/", mas no GitHub as fotos estavam sendo enviadas na raiz do repositório. Isso fazia as imagens aparecerem como quebradas no site.
+Arquivos prontos para publicação no GitHub Pages.
 
-Nesta versão:
-1. As fotos dos produtos ficam também na raiz do site.
-2. index.html e produtos.html usam os nomes corretos dos arquivos na raiz.
-3. As imagens principais da página inicial foram substituídas por fotos que já existem no pacote, evitando imagens quebradas.
+## Publicação
+1. Entre no repositório da DaCaLi Store.
+2. Envie todos os arquivos desta pasta para a raiz do repositório.
+3. Substitua os arquivos `index.html`, `produtos.html`, `estilo.css` e `script.js`.
+4. Envie também todas as imagens `.jpg`, `.png` e `.webp`.
+5. Aguarde a atualização do GitHub Pages e pressione Ctrl+F5 no navegador.
 
-COMO PUBLICAR NO GITHUB:
-- Envie/substitua os arquivos desta pasta no repositório.
-- Mantenha index.html na raiz.
-- Mantenha produtos.html, estilo.css, script.js e todas as imagens na raiz.
-- Aguarde 1 a 5 minutos do GitHub Pages atualizar.
-- Depois faça Ctrl+F5 no navegador.
-
-Importante: não coloque as imagens dentro de outra pasta se for usar esta versão.
+O catálogo inclui busca, filtros, botão direto para WhatsApp, layout responsivo e os novos produtos enviados.
