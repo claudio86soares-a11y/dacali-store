@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Confira os produtos da DaCaLi Store. Cama, mesa e banho, cozinha, alimentos e muito mais.">
+  <meta name="description" content="Catálogo de produtos DaCaLi Store: cama, mesa e banho, perfumes, cosméticos, presentes, brinquedos, alimentos e produtos para casa.">
   <title>Produtos | DaCaLi Store</title>
   <link rel="stylesheet" href="estilo.css">
 </head>
@@ -26,8 +26,8 @@
 <section class="page-hero">
   <div class="container">
     <span class="eyebrow">CATÁLOGO DACALI STORE</span>
-    <h1>Nossos produtos</h1>
-    <p>Confira alguns dos produtos disponíveis na DaCaLi Store. Escolha uma categoria e fale conosco pelo WhatsApp.</p>
+    <h1>Encontre o que você procura</h1>
+    <p>Confira alguns dos produtos da DaCaLi Store. Consulte disponibilidade, cores, tamanhos e valores diretamente pelo WhatsApp.</p>
   </div>
 </section>
 
@@ -38,95 +38,123 @@
     <div class="filters">
       <button class="filter active" data-filter="todos">Todos</button>
       <button class="filter" data-filter="cama-mesa-banho">Cama, Mesa e Banho</button>
-      <button class="filter" data-filter="cozinha">Cozinha</button>
+      <button class="filter" data-filter="beleza">Perfumes e Beleza</button>
+      <button class="filter" data-filter="cuidados">Cuidados Pessoais</button>
+      <button class="filter" data-filter="presentes">Presentes</button>
+      <button class="filter" data-filter="brinquedos">Brinquedos</button>
+      <button class="filter" data-filter="casa">Casa</button>
       <button class="filter" data-filter="alimentos">Alimentos</button>
     </div>
     <input id="search" class="search" type="search" placeholder="🔎 Buscar produto...">
   </div>
 
   <div class="product-grid" id="productGrid">
+    <article class="product-card" data-category="casa" data-name="jogo de panelas">
+      <div class="product-image"><img src="imagens/panelas-ruby.jpg" alt="Jogo de Panelas Ruby – 5 Peças" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CASA</small><h3>Jogo de Panelas Ruby – 5 Peças</h3><p>Jogo de panelas na cor vermelha para deixar sua cozinha mais prática e bonita.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20panelas." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="beleza" data-name="malbec eau de parfum">
+      <div class="product-image"><img src="imagens/malbec-caixa.jpg" alt="Malbec Eau de Parfum 100 ml" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>BELEZA</small><h3>Malbec Eau de Parfum 100 ml</h3><p>Perfume Malbec Eau de Parfum 100 ml. Consulte disponibilidade e condições.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20Malbec%20Eau%20de%20Parfum." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="toalhas de cozinha">
+      <div class="product-image"><img src="imagens/toalhas-cozinha.jpg" alt="Toalhas de Cozinha" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Toalhas de Cozinha</h3><p>Modelos em diferentes cores para deixar a cozinha mais bonita e funcional.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20toalhas%20de%20cozinha." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="manta preta">
+      <div class="product-image"><img src="imagens/manta-preta.jpg" alt="Manta Preta" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Manta Preta</h3><p>Manta macia e aconchegante para compor o ambiente.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20manta%20preta." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="manta turquesa">
+      <div class="product-image"><img src="imagens/manta-turquesa.jpg" alt="Manta Turquesa" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Manta Turquesa</h3><p>Manta macia em tom turquesa para conforto e decoração.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20manta%20turquesa." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="manta rosa">
+      <div class="product-image"><img src="imagens/manta-rosa.jpg" alt="Manta Rosa" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Manta Rosa</h3><p>Manta macia em tom rosa para um ambiente acolhedor.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20manta%20rosa." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="manta azul petróleo">
+      <div class="product-image"><img src="imagens/manta-petroleo.jpg" alt="Manta Azul-Petróleo" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Manta Azul-Petróleo</h3><p>Manta macia em tom azul-petróleo para compor a decoração.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20manta%20azul%20petr%C3%B3leo." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="manta branca">
+      <div class="product-image"><img src="imagens/manta-branca.jpg" alt="Manta Branca" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Manta Branca</h3><p>Manta branca macia para trazer conforto e elegância ao ambiente.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20manta%20branca." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="manta bege">
+      <div class="product-image"><img src="imagens/manta-bege.jpg" alt="Manta Bege" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Manta Bege</h3><p>Manta em tom bege, ideal para uma decoração neutra e aconchegante.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20manta%20bege." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="manta azul marinho">
+      <div class="product-image"><img src="imagens/manta-marinho.jpg" alt="Manta Azul-Marinho" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Manta Azul-Marinho</h3><p>Manta macia em tom azul-marinho para cama e decoração.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20manta%20azul%20marinho." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama cinza">
+      <div class="product-image"><img src="imagens/jogo-cama-cinza.jpg" alt="Jogo de Cama Cinza" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Cinza</h3><p>Conjunto para quarto em tonalidade cinza, com visual moderno e elegante.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20cinza." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama esmeralda">
+      <div class="product-image"><img src="imagens/jogo-cama-esmeralda.jpg" alt="Jogo de Cama Esmeralda" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Esmeralda</h3><p>Jogo de cama com composição elegante para renovar o quarto.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20esmeralda." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama coração rose">
+      <div class="product-image"><img src="imagens/jogo-cama-coracao-rose.jpg" alt="Jogo de Cama Coração Rosé" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Coração Rosé</h3><p>Conjunto de cama com estampa de corações em tons rosados.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20cora%C3%A7%C3%A3o%20rose." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama coração fendi">
+      <div class="product-image"><img src="imagens/jogo-cama-coracao-fendi.jpg" alt="Jogo de Cama Coração Fendi" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Coração Fendi</h3><p>Conjunto de cama com estampa de corações em tons neutros.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20cora%C3%A7%C3%A3o%20fendi." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama borboleta">
+      <div class="product-image"><img src="imagens/jogo-cama-borboleta.jpg" alt="Jogo de Cama Borboleta" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Borboleta</h3><p>Conjunto de cama com delicada estampa de borboletas.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20borboleta." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
+
+    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama berenice">
+      <div class="product-image"><img src="imagens/jogo-cama-berenice.jpg" alt="Jogo de Cama Berenice" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Berenice</h3><p>Jogo de cama para renovar o visual do quarto com charme e conforto.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20berenice." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
+    </article>
 
     <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama floral">
-      <div class="product-image"><img src="jogo-cama-floral.jpg" alt="Jogo de cama floral"></div>
-      <div class="product-info"><small>CAMA, MESA E BANHO</small><h3>Jogo de Cama Floral</h3><p>Conjunto com estampa floral para renovar o ambiente e deixar o quarto mais aconchegante.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20no%20Jogo%20de%20Cama%20Floral." target="_blank" rel="noopener">Tenho interesse</a></div>
+      <div class="product-image"><img src="imagens/jogo-cama.jpg" alt="Jogo de Cama Floral" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Floral</h3><p>Conjunto de cama com estampa floral para um quarto delicado e acolhedor.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20floral." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
     </article>
 
-    <article class="product-card" data-category="cama-mesa-banho" data-name="manta vinho">
-      <div class="product-image"><img src="manta-casal-vinho.png" alt="Manta vinho"></div>
-      <div class="product-info"><small>CAMA, MESA E BANHO</small><h3>Manta Vinho</h3><p>Manta macia em tom vinho, ideal para trazer conforto e elegância ao quarto.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20na%20Manta%20Vinho." target="_blank" rel="noopener">Tenho interesse</a></div>
+    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama florencia">
+      <div class="product-image"><img src="imagens/jogo-cama-florencia.jpg" alt="Jogo de Cama Florencia" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>CAMA MESA BANHO</small><h3>Jogo de Cama Florencia</h3><p>Conjunto de cama com visual delicado e elegante.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20jogo%20de%20cama%20florencia." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
     </article>
 
-    <article class="product-card" data-category="cama-mesa-banho" data-name="colcha cinza clara">
-      <div class="product-image"><img src="colcha-cinza-clara.webp" alt="Colcha cinza clara"></div>
-      <div class="product-info"><small>CAMA, MESA E BANHO</small><h3>Colcha Cinza-Clara</h3><p>Visual neutro e sofisticado para combinar com diferentes estilos de quarto.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20na%20Colcha%20Cinza-Clara." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cama-mesa-banho" data-name="toalha de mesa botanica">
-      <div class="product-image"><img src="toalha-mesa-botanica.jpg" alt="Toalha de mesa Botânica"></div>
-      <div class="product-info"><small>MESA</small><h3>Toalha de Mesa Botânica</h3><p>Estampa de folhas para deixar a mesa mais bonita e acolhedora.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20na%20Toalha%20de%20Mesa%20Bot%C3%A2nica." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama sonhare prata">
-      <div class="product-image"><img src="jogo-cama-sonhare-prata.jpg" alt="Jogo de cama Sonhare prata"></div>
-      <div class="product-info"><small>CAMA, MESA E BANHO</small><h3>Jogo de Cama Sonhare Prata</h3><p>Conjunto com acabamento elegante e estampa geométrica em tons neutros.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20no%20Jogo%20de%20Cama%20Sonhare%20Prata." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cama-mesa-banho" data-name="jogo de cama linari solteiro">
-      <div class="product-image"><img src="jogo-cama-linari-solteiro.jpg" alt="Jogo de cama Linari solteiro"></div>
-      <div class="product-info"><small>CAMA, MESA E BANHO</small><h3>Jogo de Cama Linari — Solteiro</h3><p>Opção prática e elegante para cama de solteiro.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20no%20Jogo%20de%20Cama%20Linari%20Solteiro." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cama-mesa-banho" data-name="kit colcha vintage casal">
-      <div class="product-image"><img src="kit-colcha-vintage-casal.jpg" alt="Kit colcha vintage casal"></div>
-      <div class="product-info"><small>CAMA, MESA E BANHO</small><h3>Kit Colcha Vintage — Casal</h3><p>Conjunto para renovar a decoração do quarto com praticidade.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20no%20Kit%20Colcha%20Vintage%20Casal." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cama-mesa-banho" data-name="manta cinza">
-      <div class="product-image"><img src="manta-cinza.jpg" alt="Manta cinza"></div>
-      <div class="product-info"><small>CAMA, MESA E BANHO</small><h3>Manta Cinza</h3><p>Cor neutra e textura aconchegante para combinar com sua decoração.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20na%20Manta%20Cinza." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cama-mesa-banho" data-name="produto cama mesa banho">
-      <div class="product-image"><img src="produto-casa-whatsapp.jpeg" alt="Produto DaCaLi Store"></div>
-      <div class="product-info"><small>CASA</small><h3>Novidades para sua Casa</h3><p>Confira nossas novidades e consulte outras opções disponíveis.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Quero%20ver%20as%20novidades%20dispon%C3%ADveis." target="_blank" rel="noopener">Ver novidades</a></div>
-    </article>
-
-    <article class="product-card" data-category="alimentos" data-name="chi mifen ramen carne">
-      <div class="product-image"><img src="chi-mifen-carne.png" alt="Chi-Mifen Lamen sabor carne"></div>
-      <div class="product-info"><small>ALIMENTOS</small><h3>Chi-Mifen Lamen — Carne</h3><p>Macarrão instantâneo sabor carne. Consulte disponibilidade.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20no%20Chi-Mifen%20Lamen%20sabor%20Carne." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="alimentos" data-name="chi mifen ramen galinha">
-      <div class="product-image"><img src="chi-mifen-galinha.png" alt="Chi-Mifen Lamen sabor galinha"></div>
-      <div class="product-info"><small>ALIMENTOS</small><h3>Chi-Mifen Lamen — Galinha</h3><p>Macarrão instantâneo sabor galinha. Consulte disponibilidade.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20no%20Chi-Mifen%20Lamen%20sabor%20Galinha." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cozinha" data-name="conjunto de panelas">
-      <div class="product-image"><img src="conjunto-panelas.jpg" alt="Conjunto de panelas"></div>
-      <div class="product-info"><small>COZINHA</small><h3>Conjunto de Panelas</h3><p>Conjunto para equipar sua cozinha com praticidade e estilo.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20no%20Conjunto%20de%20Panelas." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cozinha" data-name="panela de pressão preta">
-      <div class="product-image"><img src="panela-pressao-preta.jpg" alt="Panela de pressão preta"></div>
-      <div class="product-info"><small>COZINHA</small><h3>Panela de Pressão</h3><p>Modelo preto para facilitar o preparo das refeições do dia a dia.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20na%20Panela%20de%20Press%C3%A3o." target="_blank" rel="noopener">Tenho interesse</a></div>
-    </article>
-
-    <article class="product-card" data-category="cozinha" data-name="panela de pressão branca">
-      <div class="product-image"><img src="panela-pressao-branca.jpg" alt="Panela de pressão branca"></div>
-      <div class="product-info"><small>COZINHA</small><h3>Panela de Pressão — Branca</h3><p>Modelo com acabamento claro para sua cozinha.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi!%20Tenho%20interesse%20na%20Panela%20de%20Press%C3%A3o%20Branca." target="_blank" rel="noopener">Tenho interesse</a></div>
+    <article class="product-card" data-category="alimentos" data-name="chi-mifen massa de arroz">
+      <div class="product-image"><img src="imagens/chi-mifen-arroz.jpg" alt="Chi-Mifen – Massa Alimentícia de Arroz 200 g" loading="lazy"><span>Disponível</span></div>
+      <div class="product-info"><small>ALIMENTOS</small><h3>Chi-Mifen – Massa Alimentícia de Arroz 200 g</h3><p>Massa alimentícia de arroz, sem glúten, prática e rápida de preparar.</p><a class="product-btn" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store%21%20Gostaria%20de%20consultar%20disponibilidade%20e%20valor%20de%20Chi-Mifen%20massa%20de%20arroz." target="_blank" rel="noopener">Consultar no WhatsApp</a></div>
     </article>
 
   </div>
 
   <div id="emptyState" class="empty-state" hidden>
     <h3>Nenhum produto encontrado</h3>
-    <p>Experimente outra palavra ou selecione outra categoria.</p>
+    <p>Experimente outra palavra ou selecione uma categoria diferente.</p>
   </div>
 
   <div class="catalog-note">
     <strong>📲 Gostou de algum produto?</strong>
-    <span>Fale com a DaCaLi Store pelo WhatsApp para confirmar disponibilidade, cores, tamanhos, modelos e formas de entrega.</span>
-    <a class="btn btn-primary" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store!%20Gostaria%20de%20consultar%20o%20cat%C3%A1logo." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <span>Chame a DaCaLi Store no WhatsApp para confirmar disponibilidade, cores, tamanhos, preços e formas de entrega.</span>
+    <a class="btn btn-primary" href="https://wa.me/5511983044529?text=Ol%C3%A1%20DaCaLi%20Store!%20Gostaria%20de%20consultar%20o%20cat%C3%A1logo." target="_blank">Falar no WhatsApp</a>
   </div>
 
 </div>
@@ -137,7 +165,7 @@
   <div class="container footer-grid">
     <div><img class="footer-logo" src="logo-dacali.png" alt="DaCaLi Store"><p>Variedade que encanta, preço que surpreende.</p></div>
     <div><h3>Links</h3><a href="index.html">Início</a><a href="produtos.html">Produtos</a><a href="index.html#sobre">Sobre nós</a></div>
-    <div><h3>Contato</h3><a href="https://wa.me/5511983044529" target="_blank" rel="noopener">(11) 98304-4529</a><a href="mailto:contato.dacalistore@gmail.com">contato.dacalistore@gmail.com</a></div>
+    <div><h3>Contato</h3><a href="https://wa.me/5511983044529" target="_blank">(11) 98304-4529</a><a href="mailto:contato.dacalistore@gmail.com">contato.dacalistore@gmail.com</a></div>
   </div>
   <div class="copyright">© 2026 DaCaLi Store. Todos os direitos reservados.</div>
 </footer>
