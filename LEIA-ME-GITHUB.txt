@@ -1,12 +1,13 @@
-# DaCaLi Store — site profissional
+DACALI STORE — SITE
 
-Arquivos prontos para publicação no GitHub Pages.
+Arquivos principais:
+- index.html — página inicial
+- produtos.html — catálogo completo com imagens e filtros por categoria
+- estilo.css — visual responsivo
+- script.js — menu, busca e filtros
+- video-dacali.mp4 — vídeo institucional
 
-## Publicação
-1. Entre no repositório da DaCaLi Store.
-2. Envie todos os arquivos desta pasta para a raiz do repositório.
-3. Substitua os arquivos `index.html`, `produtos.html`, `estilo.css` e `script.js`.
-4. Envie também todas as imagens `.jpg`, `.png` e `.webp`.
-5. Aguarde a atualização do GitHub Pages e pressione Ctrl+F5 no navegador.
+O botão flutuante do WhatsApp é um ícone vetorial pequeno e abre diretamente:
+https://wa.me/5511983044529
 
-O catálogo inclui busca, filtros, botão direto para WhatsApp, layout responsivo e os novos produtos enviados.
+O botão “Ver catálogo completo” abre produtos.html, onde o visitante pode pesquisar e filtrar os produtos e visualizar as imagens do acervo.

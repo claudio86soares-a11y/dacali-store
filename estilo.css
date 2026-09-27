@@ -42,3 +42,18 @@
   .floating-wa{width:58px;height:58px;padding:6px;justify-content:center}
   .floating-wa img{width:46px;height:46px}
 }
+
+
+/* WhatsApp flutuante — acesso rápido e discreto */
+.floating-wa{position:fixed;right:20px;bottom:20px;z-index:100;width:56px;height:56px;padding:0!important;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.20);transition:transform .2s ease,box-shadow .2s ease;border:3px solid #fff}
+.floating-wa svg{width:30px;height:30px;display:block}
+.floating-wa span{display:none!important}
+.floating-wa:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 14px 34px rgba(0,0,0,.24);background:#20bd5a}
+@media(max-width:600px){.floating-wa{right:16px;bottom:16px;width:52px;height:52px}.floating-wa svg{width:28px;height:28px}}
+
+/* Catálogo: leitura visual mais limpa */
+.catalog .product-card{box-shadow:0 5px 18px rgba(23,23,28,.045)}
+.catalog .product-image{height:280px}
+.catalog .product-info h3{min-height:46px}
+.catalog .product-info p{min-height:42px}
+@media(max-width:600px){.catalog .product-image{height:270px}.catalog .product-info h3,.catalog .product-info p{min-height:0}}
