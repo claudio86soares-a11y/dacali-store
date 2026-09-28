@@ -1,13 +1,28 @@
-DaCaLi Store — Site com catálogo atualizado
+# DaCaLi Store — site profissional
 
-Arquivos principais:
-- index.html — página inicial
-- produtos.html — catálogo com busca, filtros e 19 produtos cadastrados
-- estilo.css — estilos responsivos
-- script.js — menu, busca e filtros
-- logo-dacali.png — identidade visual
-- imagens/ — fotos dos produtos adicionados
+## Arquivos
+- `index.html` — página inicial
+- `produtos.html` — catálogo de produtos
+- `estilo.css` — visual responsivo
+- `script.js` — menu, filtros e busca
+- imagens existentes do seu projeto podem permanecer com os mesmos nomes.
 
-O catálogo inclui botão direto para o WhatsApp comercial (11) 98304-4529 para consultar disponibilidade e valores.
+## Como publicar no GitHub Pages
+1. Substitua o `index.html`, `estilo.css` e `script.js` pelos arquivos deste pacote.
+2. Adicione o novo `produtos.html`.
+3. Mantenha `logo-dacali.png`, `herói-dacali.jpg` e `sobre-dacali.jpg`.
+4. Se tiver fotos de produtos, coloque-as na raiz do repositório e altere os nomes em `produtos.html`.
+5. No GitHub, faça o commit.
+6. Acesse Settings > Pages e confirme a publicação pela branch `principal`.
 
-Para publicar: envie todos os arquivos e a pasta imagens/ para o servidor/hospedagem, mantendo a estrutura das pastas.
+## Produtos
+A página já possui filtros por categoria e campo de busca. Para acrescentar produtos, copie um bloco `<article class="product-card">` em `produtos.html` e altere:
+- `data-category`
+- `data-name`
+- foto
+- nome
+- descrição
+- mensagem do WhatsApp
+
+## WhatsApp
+O botão está configurado para o número comercial informado: (11) 98304-4529.
