@@ -170,10 +170,3 @@
 .product-image img{object-fit:contain!important;padding:12px;background:#fff;}
 .product-image img,.category-card img{filter:saturate(1.025) contrast(1.015);}
 @media(max-width:600px){.category-card img{padding:10px}.product-image{height:300px}.product-image img{padding:10px}}
-
-
-/* Banner secundário: somente a foto da família, sem corte e sem sobreposição de texto */
-.secondary-banner-photo-only{display:block;overflow:hidden;border-radius:26px;background:#fff;box-shadow:0 18px 45px rgba(23,23,28,.10);line-height:0}
-.secondary-banner-photo-only img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center;transition:transform .45s ease}
-.secondary-banner-photo-only:hover img{transform:scale(1.012)}
-@media(max-width:700px){.secondary-banner-photo-only{border-radius:20px}.secondary-banner-photo-only img{width:100%;height:auto;max-height:420px}}

@@ -101,21 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* Catálogo: filtros e busca */
-  // Mantém os contadores visuais das categorias sincronizados com os cards atuais.
-  const categoryCounter = {};
-  $$(".product-card").forEach(card => { categoryCounter[card.dataset.category] = (categoryCounter[card.dataset.category] || 0) + 1; });
-  const totalProducts = $$(".product-card").length;
-  $$("[data-category-count]").forEach(el => {
-    const key = el.dataset.categoryCount;
-    const value = key === "todos" ? totalProducts : (categoryCounter[key] || 0);
-    el.textContent = `${value} ${value === 1 ? "produto" : "produtos"}`;
-  });
-  $$(".category-badge").forEach(el => {
-    const link = el.closest("[data-category-link]");
-    const key = link?.dataset.categoryLink;
-    const value = key === "todos" ? totalProducts : (categoryCounter[key] || 0);
-    el.textContent = value;
-  });
   const filters = $$(".filter");
   const cards = $$(".product-card");
   const search = $("#search");
