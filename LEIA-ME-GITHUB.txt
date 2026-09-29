@@ -9,3 +9,6 @@ ATUALIZAÇÃO 28/09/2026
 - Catálogo ampliado para 59 produtos.
 - Foram adicionadas 16 novas imagens de produtos, distribuídas por Beleza, Cama/Mesa/Banho, Alimentos, Casa e Cozinha, Presentes e Brinquedos.
 - As páginas produtos.html e categoria.html usam a mesma base de produtos para manter quantidades e fotos sincronizadas.
+
+
+Atualização 29/09/2026: banner-secundario.png foi incluído na página inicial, entre o hero e o vídeo, com layout responsivo e link para o catálogo.
