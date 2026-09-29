@@ -12,3 +12,6 @@ ATUALIZAÇÃO 28/09/2026
 
 
 Atualização 29/09/2026: banner-secundario.png foi incluído na página inicial, entre o hero e o vídeo, com layout responsivo e link para o catálogo.
+
+
+ATUALIZAÇÃO: 20 novos produtos adicionados ao catálogo. Banner secundário substituído por versão profissional 8:3, preservando a visualização da família.
