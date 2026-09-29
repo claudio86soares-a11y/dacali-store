@@ -142,3 +142,22 @@
   .back-to-top{right:16px;bottom:78px;width:38px;height:38px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}[data-reveal]{opacity:1!important;transform:none!important}.hero-main img{transition:none}}
+
+/* Carrossel de categorias — versão ampliada e mais intuitiva */
+.category-carousel{margin-top:14px;margin-bottom:38px;gap:14px}
+.category-track{padding:10px 6px 22px;cursor:grab;user-select:none}
+.category-track.is-dragging{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+.category-slide{flex-basis:260px;min-height:292px;border-radius:24px}
+.category-slide-media{position:relative;height:160px;overflow:hidden;background:#f7f7f9}
+.category-slide-media img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.category-slide:hover .category-slide-media img{transform:scale(1.06)}
+.category-slide .category-badge{position:absolute;right:12px;bottom:12px;min-width:34px;height:34px;padding:0 8px;border-radius:999px;background:rgba(255,255,255,.94);color:var(--pink);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.category-slide span:not(.category-badge){font-size:18px;padding:16px 17px 4px}
+.category-slide small{font-size:12px;padding:0 17px}
+.category-slide b{font-size:13px;padding:15px 17px 17px}
+.carousel-arrow{width:50px;height:50px;font-size:34px}
+.category-carousel-hint{display:flex;justify-content:center;align-items:center;gap:7px;color:#8a8a92;font-size:11px;font-weight:700;margin-top:-14px;margin-bottom:20px}
+.category-carousel-hint::before{content:'↔';color:var(--pink);font-size:16px}
+@media(max-width:900px){.category-slide{flex-basis:230px;min-height:270px}.category-slide-media{height:145px}}
+@media(max-width:600px){.category-track{padding-bottom:16px}.category-slide{flex-basis:205px;min-height:252px}.category-slide-media{height:132px}.category-slide span:not(.category-badge){font-size:15px;padding:13px 14px 3px}.category-slide small{font-size:11px;padding:0 14px}.category-slide b{font-size:11px;padding:12px 14px 14px}.category-carousel-hint{display:flex}.carousel-arrow{display:none}}
+.carousel-arrow:disabled{opacity:.35;cursor:default;transform:none!important;background:#fff;color:#999}

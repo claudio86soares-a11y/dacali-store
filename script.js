@@ -152,13 +152,50 @@ document.addEventListener("DOMContentLoaded", () => {
   setCategory(categoryData[hash] ? hash : "todos", false);
   if (hash && categoryData[hash]) setTimeout(() => $(".catalog")?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
 
-  /* Carrossel de categorias do catálogo */
+  /* Carrossel de categorias: setas no computador + arraste no toque/mouse */
   const track = $("#categoryTrack");
   if (track) {
     const prev = $(".carousel-arrow.prev");
     const next = $(".carousel-arrow.next");
-    const move = dir => track.scrollBy({ left: dir * Math.min(track.clientWidth * .72, 520), behavior: "smooth" });
+    const move = dir => track.scrollBy({ left: dir * Math.min(track.clientWidth * .78, 620), behavior: "smooth" });
     prev?.addEventListener("click", () => move(-1));
     next?.addEventListener("click", () => move(1));
+
+    let dragging = false, startX = 0, startScroll = 0, moved = false;
+    track.addEventListener("pointerdown", e => {
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      dragging = true; moved = false; startX = e.clientX; startScroll = track.scrollLeft;
+      track.classList.add("is-dragging");
+      track.setPointerCapture?.(e.pointerId);
+    });
+    track.addEventListener("pointermove", e => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      if (Math.abs(dx) > 5) moved = true;
+      track.scrollLeft = startScroll - dx;
+    });
+    const stopDrag = e => {
+      if (!dragging) return;
+      dragging = false; track.classList.remove("is-dragging");
+      if (moved) {
+        track.dataset.justDragged = "true";
+        window.setTimeout(() => delete track.dataset.justDragged, 80);
+      }
+      try { track.releasePointerCapture?.(e.pointerId); } catch (_) {}
+    };
+    track.addEventListener("pointerup", stopDrag);
+    track.addEventListener("pointercancel", stopDrag);
+    track.addEventListener("click", e => {
+      if (track.dataset.justDragged === "true") { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+
+    const updateArrows = () => {
+      const max = track.scrollWidth - track.clientWidth - 2;
+      if (prev) prev.disabled = track.scrollLeft <= 2;
+      if (next) next.disabled = track.scrollLeft >= max;
+    };
+    track.addEventListener("scroll", updateArrows, { passive: true });
+    window.addEventListener("resize", updateArrows);
+    updateArrows();
   }
 });
