@@ -170,3 +170,108 @@
 .product-image img{object-fit:contain!important;padding:12px;background:#fff;}
 .product-image img,.category-card img{filter:saturate(1.025) contrast(1.015);}
 @media(max-width:600px){.category-card img{padding:10px}.product-image{height:300px}.product-image img{padding:10px}}
+
+
+/* Banner secundário: somente a foto da família, sem corte e sem sobreposição de texto */
+.secondary-banner-photo-only{display:block;overflow:hidden;border-radius:26px;background:#fff;box-shadow:0 18px 45px rgba(23,23,28,.10);line-height:0}
+.secondary-banner-photo-only img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center;transition:transform .45s ease}
+.secondary-banner-photo-only:hover img{transform:scale(1.012)}
+@media(max-width:700px){.secondary-banner-photo-only{border-radius:20px}.secondary-banner-photo-only img{width:100%;height:auto;max-height:420px}}
+
+/* =========================================================
+   DaCaLi Store — acabamento premium final
+   ========================================================= */
+.secondary-banner{padding-top:30px;padding-bottom:30px}
+.secondary-banner-premium{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(330px,.8fr);
+  align-items:stretch;
+  overflow:hidden;
+  border-radius:28px;
+  background:#fff;
+  box-shadow:0 20px 55px rgba(23,23,28,.12);
+  border:1px solid rgba(215,25,117,.07);
+}
+.secondary-banner-premium .secondary-banner-photo{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f7f5f7;
+  overflow:hidden;
+}
+.secondary-banner-premium .secondary-banner-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
+  transition:transform .5s ease;
+}
+.secondary-banner-premium:hover .secondary-banner-photo img{transform:scale(1.012)}
+.secondary-banner-premium .secondary-banner-copy{
+  min-height:100%;
+  padding:clamp(34px,5vw,66px);
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  background:linear-gradient(145deg,#c90069 0%,#d71975 45%,#ef4b9a 100%);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.secondary-banner-premium .secondary-banner-copy:before{
+  content:"";position:absolute;width:360px;height:360px;right:-210px;top:-210px;border:1px solid rgba(255,255,255,.22);border-radius:50%;box-shadow:0 0 0 42px rgba(255,255,255,.04),0 0 0 84px rgba(255,255,255,.025);
+}
+.secondary-banner-premium .secondary-banner-copy:after{
+  content:"";position:absolute;width:180px;height:180px;left:-120px;bottom:-120px;border-radius:50%;background:rgba(255,255,255,.06);
+}
+.secondary-banner-premium .secondary-banner-copy>*{position:relative;z-index:1}
+.secondary-banner-premium .secondary-banner-copy>span{margin:0 0 12px;color:#ffe7f3;font-size:11px;font-weight:900;letter-spacing:.25em}
+.secondary-banner-premium .secondary-banner-copy h2{margin:0;max-width:430px;font-family:"Playfair Display",serif;font-size:clamp(28px,3vw,43px);line-height:1.08;letter-spacing:-.02em;color:#fff}
+.secondary-banner-premium .secondary-banner-copy p{margin:18px 0 28px;max-width:460px;color:rgba(255,255,255,.9);font-size:15px;line-height:1.65}
+.secondary-banner-premium .secondary-banner-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 24px;border-radius:999px;background:#fff;color:#c90069;font-size:14px;font-weight:900;box-shadow:0 12px 26px rgba(67,0,35,.22);transition:transform .25s ease,box-shadow .25s ease}
+.secondary-banner-premium .secondary-banner-cta:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(67,0,35,.28)}
+.secondary-banner-premium .secondary-banner-cta b{font-size:18px}
+
+.video-showcase{background:linear-gradient(135deg,#fff7fb 0%,#fff 52%,#faf9fb 100%)}
+.video-section-heading{max-width:760px;margin:0 auto 34px;text-align:center}
+.video-gallery{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:24px;align-items:start}
+.video-card{overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 12px 35px rgba(23,23,28,.07)}
+.video-card .video-frame{background:#101014;box-shadow:none;border-radius:0;overflow:hidden}
+.video-card .dacali-video{display:block;width:100%;height:auto;max-height:520px;background:#101014}
+.video-card-vertical .video-frame{display:flex;justify-content:center;align-items:center;min-height:420px;background:#101014}
+.video-card-vertical .dacali-video{width:100%;height:520px;object-fit:contain}
+.video-card-content{padding:22px 24px 25px}
+.video-card-content .eyebrow{display:block;margin-bottom:7px;font-size:10px}
+.video-card-content h3{margin:0 0 8px;font-size:21px}
+.video-card-content p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.video-section-action{display:flex;justify-content:center;margin-top:28px}
+
+/* O catálogo sempre leva às páginas exclusivas abertas pelo carrossel. */
+.category-slide b{transition:transform .2s ease}
+.category-slide:hover b{transform:translateX(3px)}
+.category-card{transition:transform .25s ease,box-shadow .25s ease}
+.category-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(23,23,28,.11)}
+
+@media(max-width:900px){
+  .secondary-banner-premium{grid-template-columns:1fr .78fr}
+  .secondary-banner-premium .secondary-banner-copy{padding:34px 28px}
+  .secondary-banner-premium .secondary-banner-copy h2{font-size:clamp(26px,4vw,36px)}
+  .video-gallery{grid-template-columns:1fr 1fr}
+  .video-card-vertical .video-frame{min-height:360px}
+  .video-card-vertical .dacali-video{height:430px}
+}
+@media(max-width:700px){
+  .secondary-banner{padding-top:20px;padding-bottom:20px}
+  .secondary-banner-premium{grid-template-columns:1fr;border-radius:22px}
+  .secondary-banner-premium .secondary-banner-photo{width:100%}
+  .secondary-banner-premium .secondary-banner-photo img{width:100%;height:auto}
+  .secondary-banner-premium .secondary-banner-copy{padding:30px 25px 34px}
+  .secondary-banner-premium .secondary-banner-copy h2{font-size:32px}
+  .secondary-banner-premium .secondary-banner-copy p{font-size:14px;margin:15px 0 22px}
+  .video-gallery{grid-template-columns:1fr;gap:18px}
+  .video-card-vertical .video-frame{min-height:0}
+  .video-card-vertical .dacali-video{height:auto;max-height:620px}
+}
