@@ -1,0 +1,14 @@
+Produtos únicos: 121
+Arquivos: 96
+Referências HTML locais ausentes: 8
+Imagens de produtos ausentes: 0
+Segundo vídeo removido: True
+Vídeo principal mantido: True
+produtos.html: index.html#categorias
+produtos.html: index.html#sobre
+produtos.html: index.html#contato
+produtos.html: index.html#sobre
+categoria.html: index.html#categorias
+categoria.html: index.html#sobre
+categoria.html: index.html#contato
+categoria.html: index.html#sobre
