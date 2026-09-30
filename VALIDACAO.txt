@@ -1,13 +1,10 @@
-Produtos únicos: 122
-Arquivos no pacote: 98
-Imagens de produtos ausentes: 0
-Referências de imagens locais ausentes: 0
-Fotos de capa das 6 categorias na página inicial: únicas, sem repetição entre categorias
-Capa de Brinquedos atualizada: sophie-kit-toy-story.jpg
-Novo produto em Alimentos: Chi-Mifen Lamen – Sabor Galinha 70 g
-Segundo vídeo removido: True
-Vídeo principal mantido: True
-Menu hambúrguer em produtos.html: corrigido com site.js
-Menu hambúrguer em categoria.html: corrigido com site.js
-JavaScript catalogo.js: sintaxe validada
-JavaScript site.js: sintaxe validada
+DaCaLi Store — versão baseada na V3
+
+- Cabeçalho: frase lateral removida da logo; logo DaCaLi Store preservada.
+- Segundo vídeo: removido, mantendo o vídeo principal.
+- Sophie – Kit Toy Story: categoria BELEZA.
+- Brinquedos: capa independente, sem usar Sophie.
+- Todos: capa diferente da categoria Cama, Mesa e Banho.
+- Menu mobile: clique, fechamento por seleção, clique externo e ESC.
+- Conteúdo com data-reveal: fail-safe para não deixar a página em branco se o JavaScript falhar.
+- Estrutura: HTML/CSS para esqueleto e JavaScript para funcionalidades.
