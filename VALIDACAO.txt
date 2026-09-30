@@ -1,14 +1,13 @@
-Produtos únicos: 121
-Arquivos: 96
-Referências HTML locais ausentes: 8
+Produtos únicos: 122
+Arquivos no pacote: 98
 Imagens de produtos ausentes: 0
+Referências de imagens locais ausentes: 0
+Fotos de capa das 6 categorias na página inicial: únicas, sem repetição entre categorias
+Capa de Brinquedos atualizada: sophie-kit-toy-story.jpg
+Novo produto em Alimentos: Chi-Mifen Lamen – Sabor Galinha 70 g
 Segundo vídeo removido: True
 Vídeo principal mantido: True
-produtos.html: index.html#categorias
-produtos.html: index.html#sobre
-produtos.html: index.html#contato
-produtos.html: index.html#sobre
-categoria.html: index.html#categorias
-categoria.html: index.html#sobre
-categoria.html: index.html#contato
-categoria.html: index.html#sobre
+Menu hambúrguer em produtos.html: corrigido com site.js
+Menu hambúrguer em categoria.html: corrigido com site.js
+JavaScript catalogo.js: sintaxe validada
+JavaScript site.js: sintaxe validada
